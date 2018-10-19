@@ -1,2 +1,3 @@
 # python_api
-just messing around with a python custom api
+just messing around with a custom api in python
+
